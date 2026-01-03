@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Demo</title>
+</head>
+<body>
+  <h1 id="title">Original Title</h1>
+  <p class="message">This is a message.</p>
+  <button id="changeBtn">Change Content</button>
+  <script>
+const title = document.getElementById("title");
+const message = document.querySelector(".message");
+const button = document.getElementById("changeBtn");
+button.addEventListener("click", function () {
+  title.innerHTML = "✔ Title Updated!";
+  message.innerHTML = "The message has been <strong>changed</strong>.";
+});
+    </script>
+</body>
+</html>
